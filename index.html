@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wakizashi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Meu Css  -->
+  <link rel="stylesheet" href="./Css/style.css">
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="container-fluid p-0 bg-dark ">
+
+  <!-- Navbar  -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark   fixed-top ">
+    <div class="container-fluid ">
+      <a class="navbar-brand fs-3 " href="#">Wakizashi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+        <ul class="navbar-nav me-4 mb-2 mb-lg-0  ">
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#sobre-robo">Sobre o Robo</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#sistema-arma">Sistema de Armas</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#hardware">Hardware</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#robocup">RoboCup</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#equipe">Equipe </a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#contato">Contato</a>
+          </li>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- Fim Navbar  -->
+
+  <!-- Inicio carousel  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./images/IMG_E8034.JPG" class="img-robo d-block w-100"
+          alt="Imagem de um robo, com um lindo leque azul aberto">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/IMG_E8027.JPG" class="img-robo d-block w-100"
+          alt="Imagem de um robo, com um lindo leque azul fechado">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/IMG_8036.JPG" class="img-robo d-block w-100"
+          alt="Imagem de um robo, com um lindo leque azul fechado">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/imagem-planta.jpg" class="img-palnta d-block w-100" alt="Planta do robo (vista lateral)">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/imagem-planta2.jpg" class="img-palnta d-block w-100" alt="Planta do robo (vista inferior)">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fim Carousel  -->
+
+  <!-- sobre o robo  -->
+  <div id="sobre-robo" class=" sobre-robo container-fluid p-5 ">
+    <h1 class=" display-1 text-center">Sobre o Robo</h1>
+    <div class="line my-3"></div>
+
+
+    <div class="row  ">
+      <!-- primeira coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 text-center">
+        <p class="fs-3">Wakizashi é um robô de batalha japonês, possui um poderoso leque que se movimenta rapidamente
+          para destruir a bexiga dos robôs adversários.</p>
+      </div>
+      <!-- segunda coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 ">
+        <img class="gif-robo" src="./images/Dragon (2).gif" alt="Imagem de um dragão azul">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sitema de armas  -->
+  <div id="sistema-arma" class="container-fluid p-5">
+    <h2 class="text-center display-4">Sistema de Armas</h2>
+    <div class="line2 my-3"></div>
+
+    <div class="row ">
+      <!-- primeira coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 text-center">
+        <p class="fs-3">Wakizashi carrega um leque que é ativado atravez de <strong>Sensores</strong>, ao ativar um
+          sensor a informação é enviada e chega até o <strong>Servo motor</strong> que é responsavel por fazer o leque
+          abrir. Após 15 segundos o servo motor retorna fechando o leque.</p>
+      </div>
+      <!-- segunda coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 ">
+        <img src="./images/Ninja.gif" alt="Imagem de um ninja com uma katana">
+      </div>
+    </div>
+  </div>
+  <!-- hardware  -->
+  <div id="hardware" class="container-fluid p-5">
+
+    
+    <h2 class="text-center display-4">Especificações De Hardware</h2>
+    <div class="line2 my-3"></div>
+
+    <div class="hardware text-center">
+      <img id="img-hardware" src="./images/imagem-palnta3.jpg" alt="Planta do robo (vista por cima)">
+
+      <!-- Accordion  -->
+      <div class="accordion my-5 " id="accordionExample">
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Motor Shield
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-accordion">• Terminais em bloco de 2 pinos e jumper para conexão de alimentação externa.
+                <br>
+                • Pode controlar 4 Motores DC, 2 Motores de Passo ou 2 Servos.<br>
+                • Tensão de saída: 4,5-16V<br>
+                • Corrente de saída: 600mA por canal<br>
+                • Chip: 293D (Datasheet)<br>
+                • Até 4 motores DC bidirecional com seleção individual de velocidades de 8 bits (cerca de 0,5% de
+                resolução).<br>
+                • Resistores Pull Down mantem motores desativo durante a entrada de alimentação.<br>
+                • Botão de Reset Arduino disponível no topo da placa.<br>
+                • Até 2 Motores de Passo (Unipolar ou Bipolar) com bobina única, dupla ou passos interlaçados.!</p>
+              <img class="img-accordion" src="./images/Motor Shield.jpg" alt="Imagem do sistema do motor">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Roda + Pneu + Motor Dc 3 A 6v
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-accordion">• Tensão de Operação: 3-6VDC <br>
+                • Torque: 0,35 Kgf/cm (3V) e 0,80 Kgf/cm (6V) <br>
+                • Dimensões (motor): 70 x 37 x 23mm <br>
+                • Diâmetro (roda): 68mm <br>
+                • Largura (roda): 26mm <br>
+                • Furo central: 5,3 x 3,66mm (Semicírculo) <br>
+                • Peso: 50g</p>
+              <img class="img-accordion" src="./images/img-roda.jpg" alt="imagem da roda do robo">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Arduino
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-accordion">• Microcontrolador: ATmega328 <br>
+                • Tensão de Operação: 5v <br>
+                • Pinos de entrada/saída: 14 (dos quais 6 podem ser PWM) <br>
+                • Pinos de entrada analógica: 6 <br>
+                • Corrente DC por pino I/O: 40mA <br>
+                • Corrente DC para pino 3,3v: 50mA <br>
+                • Memória Flash: 32KB (dos quais 0,5KB são usados pelo Bootloader) <br>
+                •SRAM: 2KB - EEPROM: 1KB <br>
+                •Velocidade do Clock: 16MHz</p>
+              <img class="img-accordion" src="./images/Arduino.jpg" alt="Imagem do arduino">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Sensores
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-accordion">• Modelo: V-153-1C25 <br>
+                • Cor: Preto <br>
+                • Material: Plástico + De Metal <br>
+                • Configuração de contato: SPDT <br>
+                • Classificação atual: 15A, 1/2HP, 125/250VAC <br>
+                • Avaliação da tensão: 0.6A, 125VDC; 0.3A, 250VDC</p>
+              <img class="img-accordion" src="./images/sensores.jpg" alt="imagem dos sensores do robo">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Servo Motor
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="text-accordion">• Dimensão: 40 mm x 19 mm x 43 mm; <br>
+                • Peso Líquido: 69 g; <br>
+                • Velocidade de operação: 0.17sec/60graus (4,8 V sem carga); <br>
+                • Velocidade de operação: 0.13sec/60graus (6,0 V sem carga); <br>
+                • Stall Torque: 13 kg-cm (180,5 oz-in) em 4,8 V; <br>
+                • Stall Torque: 15 kg-cm (208,3 oz-in) em 6 V; <br>
+                • Tensão de operação: 4,8-7,2 volts; <br>
+                • Tipo de arte: todas as engrenagens de metal; <br>
+                • Fio conector: Heavy Duty, 11,81 "(300 mm).</p>
+              <img class="img-accordion" src="./images/motor.jpg" alt="imagem do servo motor">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- fim hardware  -->
+  <!-- robocup  -->
+  <div id="robocup" class="container-fluid p-5">
+    <h2 class="text-center display-4">RoboCup e Next</h2>
+    <div class="line2 my-3"></div>
+
+    <div class="row ">
+      <!-- primeira coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 text-center">
+        <h4>RoboCup</h4>
+        <div class="line3 my-3"></div>
+        <img class="img-robocup my-3" src="./images/Robocup.jpg" alt="Imagem da Robocup">
+        <p class="fs-3">A Robocup é uma tradição da FIAP. Alunos dos 1°s anos de Sistemas de Informação constroem
+          robôs para participar de duelos, onde o objetivo principal é estourar o balão que o adversário carrega. Para
+          isso, todos os robos possuem armas em seu corpo. Mas a competição também exige o funcionamento pleno do
+          robô: após estourar o balão do oponente, ele deve recolher sua arma, só assim é considerado o vencedor.</p>
+
+      </div>
+      <!-- segunda coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 text-center">
+        <h4>Next</h4>
+        <div class="line3 my-3"></div>
+        <img class="img-robocup my-3" src="./images/next.jpg" alt="Imagem do evento NEXT">
+        <p class="fs-3">O NEXT é o Festival de Tecnologia e Inovação que reúne jovens talentos da FIAP , nele é
+          apresentando as melhores criações dos alunos: drones, robôs, conteúdos para VR devices, aplicativos mobiles
+          e muito mais. <br>
+          Em 2017 o evento reuniu mais de dois mil jovens. </p>
+      </div>
+    </div>
+  </div>
+  <!-- fim-robocup  -->
+
+  <div class="container-fluid px-5">
+    <!-- videos  -->
+    <h2 class="display-4 text-center my-2">Videos</h2>
+    <div class="line2 my-3"></div>
+
+    <div class="video-row  row my-5 justify-content-center">
+      <!-- primeira coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 ">
+        <div class="ratio ratio-16x9">
+          <iframe class="videos" src="https://www.youtube.com/embed/6KPjGfqyfpw" title="YouTube video"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- segunda coluna  -->
+      <div class="col-12 col-sm-12 col-md-6 ">
+        <div class="ratio ratio-16x9 ">
+          <iframe class="videos" src="https://www.youtube.com/embed/vf9WQ_Z0i7U" title="YouTube video"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pitch -->
+  <div class="container-fluid p-5 ">
+    <h2 class="display-4 text-center my-2">Pitch</h2>
+    <div class="line2 my-3 "></div>
+    <div class="d-flex justify-content-center">
+      <div class=" video-pitch ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/RKf2RsKTdes" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Fim pitch  -->
+  <!-- cards -->
+  <div class="container-fluid px-5 text-center">
+
+    <h2 id="equipe" class="text-center my-4 display-4">Equipe</h2>
+    <div class="line2 my-3"></div>
+
+
+    <div class="row justify-content-center">
+      <!-- 1°coluna -->
+      <div class="cards col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="./images/Gregys.jpeg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Gregory Cedraz</h5>
+            <p class="card-text mb-4">Engenheiro Mecatrônico</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- 2°coluna  -->
+      <div class="cards col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="./images/Lets.jpeg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Leticia Dupont</h5>
+            <p class="card-text mb-4">Product Owner</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- 3°coluna  -->
+      <div class="cards col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="./images/Lindão.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Lucca De Freitas</h5>
+            <p class="card-text mb-4">Desenvolvedor Front-End</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-5 text-center ">
+    <div class="row justify-content-center">
+      <!-- 1°coluna -->
+      <div class="cards col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="./images/Juliao.jpeg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Julio Cesar</h5>
+            <p class="card-text mb-4">Desenvolvedor Back-End</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2°coluna -->
+      <div class="cards col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="./images/mori.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Victor Mori</h5>
+            <p class="card-text mb-4">Analista De Sistemas</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fim cards -->
+
+  <!-- forms  -->
+  <div id="contato" class="container-fluid p-5">
+
+    <h2 class="display-2 text-center my-2">Contato</h2>
+    <div class="line"></div>
+
+    <form id="cadastrar" name="cadastrar" method="post" action="">
+
+      <div class="row">
+
+        <div class="col-md-4 my-3">
+          <label for="usuario" class="form-label">Usuário:</label>
+          <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Ex: user12345" minlength="8"
+            maxlength="12" required>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Ex: seuemail@email.com"
+            required>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <label for="cpf" class="form-label">CPF:</label>
+          <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Ex: ***.***.***-**" minlength="11"
+            maxlength="14" required>
+        </div>
+
+
+        <div class="col-md-4 my-3">
+          <label for="data" class="form-label">Data de nascimento</label>
+          <input type="date" id="data" name="data" class="form-control" required>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <label for="atuacao" class="form-label">Área em que trabalha</label>
+          <select name="atuacao" id="atuacao" class="form-select">
+            <option value="0" disabled selected>Selecione sua opção</option>
+            <option value="1">Engenharia</option>
+            <option value="2">Desenvolvimento</option>
+            <option value="3">Cyber Security</option>
+            <option value="4">Administração</option>
+          </select>
+        </div>
+        <div class="col-md-4 my-3">
+          <label for="tel" class="form-label">Celular</label>
+          <input type="tel" id="tel" name="tel" class="form-control" min="10" max="100" step="10"
+            placeholder="(**) *****-****">
+        </div>
+      </div>
+
+      <div class="col-12 my-3">
+        <label for="mensagem" class="form-label">Motivo do contato</label>
+        <textarea name="" id="" class="form-control" maxlength=""></textarea>
+
+      </div>
+      <div class="col-12 my-3 d-flex justify-content-end">
+        <button type="submit" class="btn btn-outline">Enviar</button>
+      </div>
+    </div>
+    <!-- fim forms  -->
+
+
+  <!-- footer  -->
+  <div class="footer">
+    <footer class="main-footer ">
+      <a href="https://www.fiap.com.br/" target="_blank">
+        <img class="img-fiap" src="./images/Fiap.jpg" alt="Logo fiap">
+      </a>
+      <p class="copyright text-center ">© 2022 Copyright Rulers of Techbots</p>
+    </footer>
+  </div>
+  <!-- fim footer  -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+  <script src="./js/nav.js"></script>
+</body>
+
+</html>
