@@ -93,8 +93,16 @@ h2 {
     border-radius: 10px;
 }
 
-.img-palnta {
+.img-planta {
     filter: brightness(50%)
+}
+
+.img-slide{
+    filter: brightness(80%)
+}
+
+.tam-slide{
+    width: 80%;
 }
 
 .img-robo {
